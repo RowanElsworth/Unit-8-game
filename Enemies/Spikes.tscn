@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://ba06todduvrrk"]
+
+[ext_resource type="Texture2D" uid="uid://dngp13fy5vujv" path="res://Textures/Thorns.png" id="1_ualwx"]
+[ext_resource type="PackedScene" uid="uid://b8ouekrxmwdoa" path="res://Hitboxes/hitbox.tscn" id="2_ysm53"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mekfb"]
+size = Vector2(16, 16)
+
+[node name="Spikes" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, -9)
+texture = ExtResource("1_ualwx")
+region_rect = Rect2(144, 54, 18, 18)
+
+[node name="Hitbox" parent="." instance=ExtResource("2_ysm53")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(0, -8)
+shape = SubResource("RectangleShape2D_mekfb")

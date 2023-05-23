@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Texture2D" uid="uid://bydno2tcbf070" path="res://Textures/tiles_packed.png" id="1_18atn"]
+[ext_resource type="Script" path="res://World/ladder.gd" id="1_n3ce1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7kgqi"]
+size = Vector2(18, 18)
+
+[node name="Ladder" type="Area2D"]
+collision_mask = 0
+script = ExtResource("1_n3ce1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_18atn")
+centered = false
+region_enabled = true
+region_rect = Rect2(198, 54, 18, 18)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(9, 9)
+shape = SubResource("RectangleShape2D_7kgqi")

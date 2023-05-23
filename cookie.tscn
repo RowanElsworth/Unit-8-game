@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://ce4keooab31qt"]
+
+[ext_resource type="Texture2D" uid="uid://dfvuoe0dr1fh4" path="res://Cookie Reg.png" id="1_0dqpc"]
+[ext_resource type="Script" path="res://cookie.gd" id="1_dvuqy"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m40rn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_0dqpc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_01j04"]
+radius = 6.0
+
+[node name="Cookie" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_dvuqy")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0.0407887, -7.13646)
+scale = Vector2(0.108478, 0.108478)
+sprite_frames = SubResource("SpriteFrames_m40rn")
+autoplay = "default"
+frame_progress = 0.47299
+speed_scale = 0.33
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -6)
+shape = SubResource("CircleShape2D_01j04")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

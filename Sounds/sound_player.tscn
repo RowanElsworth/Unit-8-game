@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://dgynte5ku3tmk"]
+
+[ext_resource type="Script" path="res://Sounds/sound_player.gd" id="1_o7jms"]
+[ext_resource type="AudioStream" uid="uid://cegc42xtmck6h" path="res://Sounds/HurtSound.wav" id="2_uikd1"]
+
+[node name="SoundPlayer" type="Node"]
+script = ExtResource("1_o7jms")
+
+[node name="AudioPlayers" type="Node" parent="."]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource("2_uikd1")
+bus = &"Sound"
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource("2_uikd1")
+bus = &"Sound"
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource("2_uikd1")
+bus = &"Sound"
+
+[node name="AudioStreamPlayer4" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource("2_uikd1")
+bus = &"Sound"
+
+[node name="AudioStreamPlayer5" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource("2_uikd1")
+bus = &"Sound"
+
+[node name="AudioStreamPlayer6" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource("2_uikd1")
+bus = &"Sound"
+
+[node name="AudioStreamPlayer7" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource("2_uikd1")
+bus = &"Sound"
+
+[node name="AudioStreamPlayer8" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource("2_uikd1")
+bus = &"Sound"

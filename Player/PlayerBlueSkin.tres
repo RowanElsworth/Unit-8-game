@@ -1,0 +1,49 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3 uid="uid://cufje7byjy4su"]
+
+[ext_resource type="Texture2D" uid="uid://cd4gaj1k38lym" path="res://Textures/characters_packed.png" id="1_dngm5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0fffg"]
+atlas = ExtResource("1_dngm5")
+region = Rect2(48, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_unndn"]
+atlas = ExtResource("1_dngm5")
+region = Rect2(72, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q3r7r"]
+atlas = ExtResource("1_dngm5")
+region = Rect2(72, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fbcab"]
+atlas = ExtResource("1_dngm5")
+region = Rect2(48, 0, 24, 24)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0fffg")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_unndn")
+}],
+"loop": true,
+"name": &"Jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q3r7r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fbcab")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 5.0
+}]

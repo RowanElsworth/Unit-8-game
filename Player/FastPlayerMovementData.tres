@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="PlayerMovementData" load_steps=2 format=3 uid="uid://b1sgjr3s1fc6t"]
+
+[ext_resource type="Script" path="res://Player/PlayerMovementData.gd" id="1_gl4xv"]
+
+[resource]
+script = ExtResource("1_gl4xv")
+JUMP_FORCE = -190
+JUMP_RELEASE_FORCE = -70
+MAX_SPEED = 100
+FRICTION = 600
+ACCELERATION = 900
+GRAVITY = 300
+ADDITIONAL_FALL_GRAVITY = 180
+CLIMB_SPEED = 50
+DOUBLE_JUMP_COUNT = 0
