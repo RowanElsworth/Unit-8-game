@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dnohy8bo6nmum"
-path="res://.godot/imported/Cookie.png-39ca7b7aa71ef8199cfcfad7daf88f46.ctex"
+uid="uid://bxiwlr86uufm4"
+path="res://.godot/imported/Cookie 2.png-a634aa5dbad4aee72b02416714039b17.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Cookie.png"
-dest_files=["res://.godot/imported/Cookie.png-39ca7b7aa71ef8199cfcfad7daf88f46.ctex"]
+source_file="res://World/Cookie 2.png"
+dest_files=["res://.godot/imported/Cookie 2.png-a634aa5dbad4aee72b02416714039b17.ctex"]
 
 [params]
 

@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 SoundPlayer="*res://Sounds/sound_player.tscn"
 Events="*res://Events.gd"
 Transitions="*res://transitions.tscn"
+AutoScript="*res://Player/AutoScript.gd"
 
 [display]
 

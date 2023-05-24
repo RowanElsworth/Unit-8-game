@@ -1,12 +1,7 @@
 extends Control
 
-@onready var score = $Score:
-	set(value):
-		score.text = "SCORE: " + str(value)
-
-@onready var lives = $Lives:
-	set(value):
-		lives.text = "LIVES: " + str(value)
+@onready var score = $Score
+@onready var lives = $Lives
 
 var timeSet
 var timer_on = true
@@ -16,6 +11,8 @@ var timer_on = true
 		timeSet = value
 
 func _process(delta):
+	score.text = "SCORE: " + str(AutoScript.score)
+	lives.text = "LIVES: " + str(AutoScript.lives)
 	if timeSet <= 0:
 		print('end')
 	if timer_on:

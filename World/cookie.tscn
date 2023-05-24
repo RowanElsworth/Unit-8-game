@@ -1,13 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://ce4keooab31qt"]
+[gd_scene load_steps=5 format=3 uid="uid://b4dyhfxrlu6af"]
 
-[ext_resource type="Texture2D" uid="uid://dfvuoe0dr1fh4" path="res://Cookie Reg.png" id="1_0dqpc"]
-[ext_resource type="Script" path="res://cookie.gd" id="1_dvuqy"]
+[ext_resource type="Script" path="res://World/cookie.gd" id="1_oiyf7"]
+[ext_resource type="Texture2D" uid="uid://dfvuoe0dr1fh4" path="res://World/Cookie Reg.png" id="2_gdmwa"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_m40rn"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_0dqpc")
+"texture": ExtResource("2_gdmwa")
 }],
 "loop": true,
 "name": &"default",
@@ -19,7 +19,7 @@ radius = 6.0
 
 [node name="Cookie" type="Area2D"]
 collision_mask = 2
-script = ExtResource("1_dvuqy")
+script = ExtResource("1_oiyf7")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1

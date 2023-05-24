@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" path="res://World/checkpoint.tscn" id="7_b8nfo"]
 [ext_resource type="PackedScene" uid="uid://dw83welxxq2ba" path="res://World/door.tscn" id="9_icykk"]
 [ext_resource type="PackedScene" uid="uid://ba06todduvrrk" path="res://Enemies/Spikes.tscn" id="9_jjm4u"]
-[ext_resource type="PackedScene" uid="uid://ce4keooab31qt" path="res://cookie.tscn" id="10_hvf20"]
+[ext_resource type="PackedScene" uid="uid://b4dyhfxrlu6af" path="res://World/cookie.tscn" id="10_behva"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_avala"]
 texture = ExtResource("3_ucpn1")
@@ -297,7 +297,7 @@ limit_left = 20
 limit_right = 2050
 
 [node name="Player" parent="." index="3"]
-position = Vector2(1980, 90)
+position = Vector2(50, 59)
 
 [node name="TileMap" parent="." index="4" instance=ExtResource("2_qabpy")]
 texture_filter = 1
@@ -348,14 +348,14 @@ position = Vector2(333, 180)
 [node name="Spikes2" parent="." index="18" instance=ExtResource("9_jjm4u")]
 position = Vector2(351, 180)
 
-[node name="Cookie" parent="." index="19" instance=ExtResource("10_hvf20")]
-position = Vector2(243, 18)
-
-[node name="Cookie2" parent="." index="20" instance=ExtResource("10_hvf20")]
-position = Vector2(279, 18)
-
 [node name="HUD" parent="UI" index="0"]
 offset_left = 0.0
 offset_top = 0.0
 offset_right = 0.0
 offset_bottom = 0.0
+
+[node name="Cookie" parent="." index="20" instance=ExtResource("10_behva")]
+position = Vector2(243, 18)
+
+[node name="Cookie2" parent="." index="21" instance=ExtResource("10_behva")]
+position = Vector2(279, 18)
