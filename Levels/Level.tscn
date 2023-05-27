@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://clnriwy1coymd"]
+[gd_scene load_steps=6 format=3 uid="uid://clnriwy1coymd"]
 
 [ext_resource type="Script" path="res://Levels/Level.gd" id="1_ryms6"]
 [ext_resource type="PackedScene" uid="uid://uu6lnbxhnpm1" path="res://Player/Player.tscn" id="2_tmy8v"]
 [ext_resource type="PackedScene" uid="uid://b7yhaefkc8tkm" path="res://World/hud.tscn" id="3_y3ww3"]
 [ext_resource type="PackedScene" uid="uid://coaamccy6t5xq" path="res://World/pause_menu.tscn" id="4_1gahs"]
+[ext_resource type="PackedScene" uid="uid://oibeohh5ynys" path="res://World/game_over.tscn" id="5_4yeq1"]
 
 [node name="Level" type="Node2D"]
 script = ExtResource("1_ryms6")
@@ -25,3 +26,6 @@ offset_right = -240.0
 offset_bottom = -148.0
 
 [node name="PauseMenuCanvas" parent="." instance=ExtResource("4_1gahs")]
+
+[node name="GameOver" parent="." instance=ExtResource("5_4yeq1")]
+visible = false

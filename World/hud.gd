@@ -14,7 +14,7 @@ func _process(delta):
 	score.text = "SCORE: " + str(AutoScript.score)
 	lives.text = "LIVES: " + str(AutoScript.lives)
 	if timeSet <= 0:
-		print('end')
+		Events.emit_signal("time_up")
 	if timer_on:
 		timeSet -= delta
 		

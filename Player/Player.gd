@@ -22,6 +22,7 @@ var on_door = false
 
 func _ready():
 	animatedSprite.frames = load("res://Player/PlayerDinoBlue.tres")
+	Events.time_up.connect(player_die)
 
 func _physics_process(delta):
 	var input = Vector2.ZERO

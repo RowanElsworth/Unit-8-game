@@ -26,9 +26,9 @@ label_settings = SubResource("LabelSettings_dr372")
 [node name="Time" type="Label" parent="."]
 layout_mode = 0
 offset_left = 402.0
-offset_top = 19.0
+offset_top = 18.0
 offset_right = 476.0
-offset_bottom = 42.0
+offset_bottom = 41.0
 text = "TIMER: 180"
 label_settings = SubResource("LabelSettings_dr372")
 
