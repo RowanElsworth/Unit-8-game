@@ -359,3 +359,18 @@ position = Vector2(243, 18)
 
 [node name="Cookie2" parent="." index="21" instance=ExtResource("10_behva")]
 position = Vector2(279, 18)
+
+[node name="Cookie3" parent="." index="22" instance=ExtResource("10_behva")]
+position = Vector2(531, 162)
+
+[node name="Cookie4" parent="." index="23" instance=ExtResource("10_behva")]
+position = Vector2(549, 162)
+
+[node name="Cookie5" parent="." index="24" instance=ExtResource("10_behva")]
+position = Vector2(1620, 198)
+
+[node name="Cookie6" parent="." index="25" instance=ExtResource("10_behva")]
+position = Vector2(1647, 198)
+
+[node name="Cookie7" parent="." index="26" instance=ExtResource("10_behva")]
+position = Vector2(1674, 198)

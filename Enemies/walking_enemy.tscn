@@ -1,25 +1,18 @@
-[gd_scene load_steps=8 format=3 uid="uid://cd1v3qagq83tl"]
+[gd_scene load_steps=7 format=3 uid="uid://cd1v3qagq83tl"]
 
 [ext_resource type="Script" path="res://Enemies/walking_enemy.gd" id="1_ab81t"]
-[ext_resource type="Texture2D" uid="uid://cd4gaj1k38lym" path="res://Textures/characters_packed.png" id="1_yr8ue"]
+[ext_resource type="Texture2D" uid="uid://c1y7m3ie4jb5s" path="res://Textures/walking_enemy.png" id="2_pja8k"]
 [ext_resource type="PackedScene" uid="uid://b8ouekrxmwdoa" path="res://Hitboxes/hitbox.tscn" id="3_rw6cl"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_2yd0a"]
-atlas = ExtResource("1_yr8ue")
-region = Rect2(144, 24, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_v35ta"]
-atlas = ExtResource("1_yr8ue")
-region = Rect2(168, 24, 24, 24)
+[sub_resource type="AtlasTexture" id="AtlasTexture_tvb8f"]
+atlas = ExtResource("2_pja8k")
+region = Rect2(0, 0, 30, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vfqbw"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_2yd0a")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_v35ta")
+"texture": SubResource("AtlasTexture_tvb8f")
 }],
 "loop": true,
 "name": &"Walking",
@@ -33,8 +26,8 @@ size = Vector2(11, 9)
 script = ExtResource("1_ab81t")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-texture_filter = 1
-position = Vector2(-1, -12)
+position = Vector2(0, -11)
+scale = Vector2(0.708333, 0.664889)
 sprite_frames = SubResource("SpriteFrames_vfqbw")
 animation = &"Walking"
 flip_h = true
@@ -54,4 +47,4 @@ target_position = Vector2(0, 3)
 [node name="Hitbox" parent="." instance=ExtResource("3_rw6cl")]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Hitbox"]
-polygon = PackedVector2Array(-8, -1, -8, -9, -2, -12, -2, -14, -1, -16, 0, -16, 1, -14, 1, -12, 7, -9, 7, -1)
+polygon = PackedVector2Array(-8, 0, -9, -9, -6, -20, 0, -20, 10, -17, 11, -13, 4, -7, 3, 0)
